@@ -1,5 +1,5 @@
 body{
-	background: url(..sky.jpeg);
+	background: url("sky.jpeg");
 	text-align: center;
 	font-size: 16px;
 }
