@@ -1,72 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Survey Form</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<div>
-			<header><h2>What Type Of User Are You</h2></header>
-		</div>
-		<div>
-			<ul>
-				<li><a href="#" class="new">Newbie</a></li>
-				<br>
-				<li><a href="#" class="old">Average</a></li>
-				<br>
-				<li><a href="#" class="pre">Master</a></li>
-				<br>
-			</ul>
-		</div>
-		<br>
-		<br>
+    <div class="container">
+        <div class="grid-1">
+            <img src="illustration-intro.png" width="600px" class="ill">
+        </div>
+        <div class="grid-2">
+            <h1>Hello,</h1>
+            <h1>Welcome back</h1>
+            <form action="process.php" id="home">
+                <input type="text" name="username" placeholder="Username or Email" class="for">
+                <br>
+                <br>
+                <input type="text" name="password" placeholder="Password" class="for">
+                <br>
+            </form>
+            <br>
+    
+            <form id="my-form">        
+                <label><input type="checkbox" name="remember">Remember me</label>
+                <a href="#" class="forg">Forgot password?</a> 
+            </form>
+           
+            <br>
 
-			<div>
-				<form action="process.php" method="POST">
-				<label></label>
-				<input type="text" name="full name" placeholder="Full Name" class="for">
-				</form>
-			</div>	
-			<br>
+            <a href="#" class="log">Login</a>
 
-			<div>
-				<form action="process.php" method="POST">
-					<label></label>
-					<input type="email" name="email" placeholder="Email" class="for">
-				</form>	
-			</div>	
-			<br>
+           <p class="con">
+            Dont have an account?<a href="#">Click here</a>   
+           </p> 
 
-			<div>	
-				<form action="process.php" method="POST">
-					<label></label>
-					<input type="text" name="password" placeholder="Password" class="for">
-				</form>
-			</div>
-			<br>
+            </div>
 
-			<p>I agree all statements in <a href="#">Terms of service</a></p>	
-			<br>
+           <a href="#"><img src="apps.png" alt="appstore" class="app" width="350px"></a>
+ 
+
+        </div>
 
 
-			<a href="#" class="cre">Create Account</a>
-			<br>
-			<br>
+    
+    </div>
 
 
-			<p>Already have an account? <a href="#">Log in</a></p>
-
-
-	</div>
-
-
-
-
-	</main>
-
-
-	<div></div>
-
+    
 </body>
 </html>

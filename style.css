@@ -1,88 +1,78 @@
-body{
-	background: url("sky.jpeg");
-	text-align: center;
-	font-size: 16px;
-}
-
-.container{
-	background-color:  #fff;
-	margin: 10%;
-	height: 700px;
-	font-family: Arial, Helvetica, sans-serif;
-	border-radius: 20px;
-	text-align: left;
-	padding: 20px 30px;
+body {
+    background-color: blueviolet;
+    font-size: 18px;
+    width: 100%;
 }
 
 
-header{
-	padding: 20px;
-	font-weight: bold;
+.container {
+    display: grid;
+    grid-template-columns: 60% 40% ;
+    grid-column-gap: 1em;
+    margin: 4em;
+    height: 700px;
+    padding: 4em;
+    background: cornsilk;
+    border-radius: 30px;
 }
 
-.for{
-	border-radius: 30px;
-	padding: 10px;
-	width: 280px;
+.for {
+    width: 310px;
+    height: 30px;
+    border-color: white;
+    
+  
 }
 
-.cre{
-	background: #FF69B4;
-	color: #fff;
-	width: calc(100% 20em);
-	border-radius: 30px;
-	padding: .5em;
-	text-decoration: none;
+.log {
+    text-decoration: none;
+    background: rgb(54, 54, 156);
+    color: white;
+    width: calc(100% 10em);
+    padding: .5em 8em;
 }
 
-ul{
-	list-style: none;
-	text-align: left;
+.con {
+    padding-top: 3em;
 }
 
-a{
-	text-decoration: none;
+.forg {
+    padding-top: 1em;
+    padding-left: 4em;
+}
+
+.rem {
+    padding-top: 3em;
+}
+
+#home {
+    padding-top: 1em;
+}
+
+h1 {
+    font-size: 40px;
+    
+}
+
+#my-form {
+    padding-top: 1em;
 }
 
 a:hover {
-	color: red;
-	text-decoration: underline;
+    color: red;
 }
 
-.new{
-	background: #FF69B4;
-	color: #fff;
-	width: calc(100% 20em);
-	border-radius: 30px;
-	padding: .5em;
-	text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-.old{
-	background: blue;
-	color: #fff;
-	width: calc(100% 20em);
-	border-radius: 30px;
-	padding: .5em;
-	text-decoration: none;
+.app {
+    margin-left: 36em;
+    margin-bottom: 20em;
+
 }
 
-.pre{
-	background:#9400D3;
-	color: #fff;
-	width: calc(100% 20em);
-	border-radius: 30px;
-	padding: .5em;
-	text-decoration: none;
+.grid-2 {
+    padding-left: 1em;
 }
 
-
-@media only screen and (min-width: 600px) {
-	.container{
-		text-align: center;
-	}
-
-	ul{
-		text-align: center;
-	}
-}
