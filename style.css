@@ -1,125 +1,210 @@
 body {
-    background-color: blueviolet;
-    font-size: 18px;
-    width: 100%;
+    position: relative;
+    background: palevioletred;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1em;
+    color: grey;
+}
+
+.icon {
+    margin-right: 19em;
+}
+
+.wrapper {
+    padding-top: 5em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "head head soup"
+      "head head soup1"
+        
+}
+
+.head {
+    grid-area: head;
+    background-image: url(oha.png);
+    background-size: cover;
+    height: 400px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-position: bottom right;
+    
+}
+
+.head h1 {
+    background-color: #ffc600;
+    padding: 1em;
+    
+}
+
+.head p {
+    background-color: #ffc600;
+    padding: 1em;
+}
+
+.food {
+    background: #ffc600;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    height: 230px;
+}
+
+.soup {
+    grid-area: soup;
+}
+
+.soup1 {
+    grid-area: soup1;
 }
 
 
 .container {
-    display: grid;
-    grid-template-columns: 60% 40% ;
-    grid-column-gap: 1em;
-    margin: 4em;
-    height: 700px;
-    padding: 4em;
-    background: cornsilk;
-    border-radius: 30px;
+    padding: .8em 2em;
+    text-align: center;
 }
 
-.for {
-    width: 310px;
-    height: 30px;
-    border-color: white;
-    
-  
+ul {
+    list-style: none;
 }
 
-.log {
+.hide-mobile {
+    display: none;
+}
+
+.oha {
+    margin-top: 4em;
+    max-width: 100%;
+}
+
+
+.food h1 {
+    padding-top: .2em;
+}
+
+.food p {
+    padding-bottom: .1em;
+}
+
+.soup-1 {
+    background-color: white;
+   
+}
+
+
+.lea {
+    background-color: #ffc600;
+    padding: .6em 1em;
     text-decoration: none;
-    background: rgb(54, 54, 156);
-    color: white;
-    width: calc(100% 10em);
-    padding: .5em 8em;
+    color: black;
+    margin-right: 15em;
 }
 
-.con {
+.feat {
+    margin-top: 3em;
+    background: white;
+    padding:50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+}
+
+
+
+.soup-1 p{
+    padding: 0 .3em .3em .3em;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 20px;
+    padding-top: 1em;
+}
+
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    background: gray;
+    height: 100%;
     padding-top: 3em;
 }
 
-.forg {
-    padding-top: 1em;
-    padding-left: 4em;
-}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 1em 2em;
+    width: 100%;
+}   
 
-.rem {
-    padding-top: 3em;
-}
-
-#home {
-    padding-top: 1em;
-}
-
-h1 {
-    font-size: 40px;
-    
-}
-
-#my-form {
-    padding-top: 1em;
-}
-
-a:hover {
+nav ul li a:hover {
     color: red;
 }
 
-a {
-    text-decoration: none;
+
+@media (max-width: 500px) {
+    .wrapper {
+        grid-template-areas: 
+            "head"
+            "soup"
+            "soup1"
+    }
+
 }
 
-.app {
-    margin-left: 36em;
-    margin-bottom: 20em;
+@media (min-width: 720px) {
+    .show-desktop {
+        display: block;
+    }
 
+    nav ul {
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul li a {
+        color: black;
+        background-color: inherit;
+        text-align: left;
+        padding: 1em 2em;
+
+    }
+
+    nav ul li a {
+        background: #ffc600;
+    }
 }
 
-.grid-2 {
-    padding-left: 1em;
-}
-
-@media screen and (min-width: 320px) {
-    .container {
-        display: grid;
-        grid-template-rows: 60% 40% ;
-        grid-column-gap: 1em;
-        margin: 2em;
-        height: 1400px;
-        padding: 2em;
-        background: cornsilk;
-        border-radius: 30px;
-        width: 920px;
-        padding-top: 30em;
+@media (max-width: 700px) {
+    .feat {
+        grid-template-columns: 1fr;
     }
 
-    .grid-2 {
-
-    }
-
-    body {
-        font-size: 18px;
-    }
-
-    .app {
-        margin-left: 20em;
-        margin-bottom: 10em;
-    }
-}    
-
-
-@media screen and (min-width: 800px) {
-    .container {
-        display: grid;
-        grid-template-columns: 60% 40% ;
-        grid-column-gap: 1em;
-        margin: 4em;
-        height: 700px;
-        padding: 4em;
-        background: cornsilk;
-        border-radius: 30px;
-    }
-
-    .app {
-        margin-left: 36em;
-        margin-bottom: 20em;
-      
-    }
+   
 }

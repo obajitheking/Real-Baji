@@ -3,50 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up</title>
     <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
 </head>
 <body>
     <div class="container">
-        <div class="grid-1">
-            <img src="illustration-intro.png" width="600px" class="ill">
-        </div>
-        <div class="grid-2">
-            <h1>Hello,</h1>
-            <h1>Welcome back</h1>
-            <form action="process.php" id="home">
-                <input type="text" name="username" placeholder="Username or Email" class="for">
-                <br>
-                <br>
-                <input type="text" name="password" placeholder="Password" class="for">
-                <br>
-            </form>
-            <br>
-    
-            <form id="my-form">        
-                <label><input type="checkbox" name="remember">Remember me</label>
-                <a href="#" class="forg">Forgot password?</a> 
-            </form>
-           
-            <br>
+        <section>
+            <a href="#" class="hide-desktop icon">
+                <img src="menu.png" alt="menu-bar" width="80px" class="men">
+            </a>  
 
-            <a href="#" class="log">Login</a>
+            <button></button>
 
-           <p class="con">
-            Dont have an account?<a href="#">Click here</a>   
-           </p> 
-
+            <nav>
+                <ul class="show-desktop hide-mobile">
+                    <li><a href="#">SOUPS</a></li>
+                    <li><a href="#">BEERS</a></li>
+                    <li><a href="#">WINES</a></li>
+                    <li><a href="#">DESERTS</a></li>
+                    <li><a href="#">RESERVATIONS</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="wrapper">
+            <div class="head">
+                <h1>Baji's Diner</h1>
+                <p>Best in Town</p>
             </div>
 
-           
-
+            <div class="food soup">
+                 <h1>&#x20A6 900.00</h1>
+                 <h3>Soups</h3>
+            </div>
+            <div class="food soup1">
+                <h1>&#x20A6 500.00</h1>
+                <h3>Beers</h3>
+            </div>    
+        </section>     
+        <div class="skill">
+            <div class="soup-1">
+                <img src="soup.png" alt="soup" width=80px>
+                <h3>Soups</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Baji is the real deal. </p>
+            </div>
+            <div class="soup-1">
+                <img src="beer.png" alt="beer" width=100px>
+                <h3>Beers</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Baji is the real deal.</p>
+            </div>
+            <div class="soup-1">
+                <img src="wine.png" alt="wine" width=100px>
+                <h3>Wine</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Baji is the real deal. </p>
+            </div>
+            <div class="soup-1">
+                <img src="music.png" alt="music" width=80px>
+                <h3>Music</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Baji is the real deal.</p>
+            </div>
         </div>
-
-
-    
+        <section class="feat">
+            <img src="meat.png" alt="meat" width="400px">
+        
+            <div class="about"> 
+                <h2>Featured Accesories</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p>
+                    This is what you have been waiting for 
+                </p>
+                <br>
+                <a href="#" class="lea">Learn More</a>
+            </div>
+        </section>
     </div>
-
-
-    
 </body>
 </html>
