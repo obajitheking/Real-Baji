@@ -1,104 +1,86 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-   background-color: rgb(22, 21, 21);
-    font-family: Arial, Helvetica, sans-serif;
-} 
-
-h1 {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 50;
-    margin: 1rem 0 3rem;
-    color: #fff;
-
-}
-
-.style {
-    color: lime;
-    font-weight: 800;
-}
-
-.box {
     display: flex;
+    width: 100%;
+    overflow-x: hidden;
     justify-content: center;
     align-items: center;
+    background-color: black;
+}
+
+.container {
+    background-color: grey;
+    height: 100%;
+    margin: 40px ;
+    position: relative;
+    min-height: 500px;
+    width: 100vh;
+ 
+}
+
+.container h1 {
+    margin: 25px 40px;
     text-align: center;
 }
 
-.mess {
-    padding: 0.5rem 1rem;
-    height: 50px;
-    outline: none;
-    background-color: white;
-    width: 400px;
-    font-size: 1.15rem;
-    margin: 0.25rem;
-    border-radius: 25px;
+label {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+input {
+    width: 90%;
+    height: 30px;
+    margin: 10px 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    background: lightskyblue;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    background: lightskyblue;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -2;
+    filter: blur(40px);
+    margin: 30px;
+}
+
+.container::before, .container::after {
+    background: linear-gradient(red, green, blue, yellow);
+}
+
+.btn {
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: beige;
     border: none;
 }
 
-.addButton {
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    outline: none;
-    border: none;
-    background-color: lime;
-    color: white;
-    margin: 0.25px;
-}
-
-.addButton:hover {
+.btn:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.item {
-    padding: 0.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 4px solid #fff;
-}
-
-.item_input {
-    background: none;
-    outline: none;
-    color: #fff;
-    border: none;
-    width: 250px;
-    font-size: 1.4rem;
-}
-
-.editButton {
-    color: lime;
-    border: none;
-    font-size: 1rem;
-    margin: 0 0.5rem;
-    background: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.removeButton {
-    color: red;
-    border: none;
-    font-size: 1rem;
-    margin: 0 0.5rem;
-    background: none;
-    outline: none;
-    cursor: pointer;
+p {
+    font-size: 25px;
+    margin-left: 2rem;
+    font-weight: bold;
 }
 

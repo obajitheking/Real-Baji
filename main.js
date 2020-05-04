@@ -1,71 +1,20 @@
-const addButton = document.querySelector('.addButton')
-var input = document.querySelector('.mess')
-const container = document.querySelector('.container')
+function bmi() {
+    let fee = document.querySelector('.feet').value;
 
-class item {
-    constructor(itemName) {
+    let weight = document.querySelector('.weight').value;
 
-        this.createDiv(itemName);
+    let bmi = weight / Math.pow(fee, 2);
+
+    if (bmi < 18.5) {
+        document.querySelector('p').innerHTML = 'Your Body Mass Index (BMI) is -: ' + (Math.round(bmi * 100) / 100).toFixed(2) + '<br>' + 'Your Index Value is in Under Weight';
     }
-    
-    createDiv(itemName) {
-        let input = document.createElement('input');
-        input.value = itemName;
-        input.disabled = true;
-        input.classList.add('item_input');
-        input.type = "text";
-
-        let itemBox = document.createElement('div');
-        itemBox.classList.add('item');
-
-        let editButton = document.createElement('button');
-        editButton.innerHTML = "EDIT";
-        editButton.classList.add('editButton');   
-     
-        let removeButton = document.createElement('button');
-        removeButton.innerHTML = "REMOVE"
-        removeButton.classList.add('removeButton'); 
-
-        container.appendChild(itemBox);
-
-        itemBox.appendChild(input);
-        itemBox.appendChild(editButton);
-        itemBox.appendChild(removeButton);
-
-        editButton.addEventListener('click', () => this.edit(input));
-
-        removeButton.addEventListener('click', () => this.remove(itemBox))
-
-    }    
-
-
-    edit(input){
-        input.disabled = !input.disabled;
+    else if (bmi >= 18.5 && bmi <= 24.9) {
+        document.querySelector('p').innerHTML = 'Your Body Mass Index (BMI) is -: ' + (Math.round(bmi * 100) / 100).toFixed(2) + '<br>' + 'Your Index Value is Healthy';
     }
-
-    remove(item){
-        container.removeChild(item);
+    else if (bmi > 25.0) {
+        document.querySelector('p').innerHTML = 'Your Body Mass Index (BMI) is -: ' + (Math.round(bmi * 100) / 100).toFixed(2) + '<br>' + 'Your Index Value is in Over Weight';
     }
-
 }
 
+document.querySelector('.btn').addEventListener('click', bmi);
 
-function check(){
-    if(input.value != ""){
-        new item(input.value);
-        input.value = "";
-    }
-  }
-
-  
-
-
-addButton.addEventListener("click", check);
-  
-
-window.addEventListener('keydown', (e) =>{
-    if(e.which == 13){
-        check();
-    }
-})
- 
