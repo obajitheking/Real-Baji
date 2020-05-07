@@ -1,20 +1,29 @@
-function bmi() {
-    let fee = document.querySelector('.feet').value;
+var i = 0;
+var images = [];
 
-    let weight = document.querySelector('.weight').value;
 
-    let bmi = weight / Math.pow(fee, 2);
+images[0] = 'one.png';
+images[1] = 'two.png';
+images[2] = 'three.png';
+images[3] = 'four.png';
+images[4] = 'five.png';
+images[5] = 'six.png';
+images[6] = 'seven.png';
+images[7] = 'eight.png';
+images[8] = 'nine.png';
 
-    if (bmi < 18.5) {
-        document.querySelector('p').innerHTML = 'Your Body Mass Index (BMI) is -: ' + (Math.round(bmi * 100) / 100).toFixed(2) + '<br>' + 'Your Index Value is in Under Weight';
-    }
-    else if (bmi >= 18.5 && bmi <= 24.9) {
-        document.querySelector('p').innerHTML = 'Your Body Mass Index (BMI) is -: ' + (Math.round(bmi * 100) / 100).toFixed(2) + '<br>' + 'Your Index Value is Healthy';
-    }
-    else if (bmi > 25.0) {
-        document.querySelector('p').innerHTML = 'Your Body Mass Index (BMI) is -: ' + (Math.round(bmi * 100) / 100).toFixed(2) + '<br>' + 'Your Index Value is in Over Weight';
-    }
+function changeImg() {
+
+    let number = Math.floor(Math.random() * images.length);
+
+    document.slide.src = images[number]; 
+
+  
+
+    btn.innerHTML = 'Click here for more'
+
 }
 
-document.querySelector('.btn').addEventListener('click', bmi);
+const btn = document.querySelector('.btn');
 
+btn.addEventListener('click', changeImg);
