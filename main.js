@@ -1,29 +1,71 @@
-var i = 0;
-var images = [];
+const addButton = document.querySelector('.addButton')
+var input = document.querySelector('.mess')
+const container = document.querySelector('.container')
+
+class item {
+    constructor(itemName) {
+
+        this.createDiv(itemName);
+    }
+    
+    createDiv(itemName) {
+        let input = document.createElement('input');
+        input.value = itemName;
+        input.disabled = true;
+        input.classList.add('item_input');
+        input.type = "text";
+
+        let itemBox = document.createElement('div');
+        itemBox.classList.add('item');
+
+        let editButton = document.createElement('button');
+        editButton.innerHTML = "EDIT";
+        editButton.classList.add('editButton');   
+     
+        let removeButton = document.createElement('button');
+        removeButton.innerHTML = "REMOVE"
+        removeButton.classList.add('removeButton'); 
+
+        container.appendChild(itemBox);
+
+        itemBox.appendChild(input);
+        itemBox.appendChild(editButton);
+        itemBox.appendChild(removeButton);
+
+        editButton.addEventListener('click', () => this.edit(input));
+
+        removeButton.addEventListener('click', () => this.remove(itemBox))
+
+    }    
 
 
-images[0] = 'one.png';
-images[1] = 'two.png';
-images[2] = 'three.png';
-images[3] = 'four.png';
-images[4] = 'five.png';
-images[5] = 'six.png';
-images[6] = 'seven.png';
-images[7] = 'eight.png';
-images[8] = 'nine.png';
+    edit(input){
+        input.disabled = !input.disabled;
+    }
 
-function changeImg() {
-
-    let number = Math.floor(Math.random() * images.length);
-
-    document.slide.src = images[number]; 
-
-  
-
-    btn.innerHTML = 'Click here for more'
+    remove(item){
+        container.removeChild(item);
+    }
 
 }
 
-const btn = document.querySelector('.btn');
 
-btn.addEventListener('click', changeImg);
+function check(){
+    if(input.value != ""){
+        new item(input.value);
+        input.value = "";
+    }
+  }
+
+  
+
+
+addButton.addEventListener("click", check);
+  
+
+window.addEventListener('keydown', (e) =>{
+    if(e.which == 13){
+        check();
+    }
+})
+ 

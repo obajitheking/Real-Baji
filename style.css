@@ -1,64 +1,104 @@
-body {
-    background-color:  rgb(163, 73, 73);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-  
+body {
+   background-color: rgb(22, 21, 21);
+    font-family: Arial, Helvetica, sans-serif;
+} 
 
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 50;
+    margin: 1rem 0 3rem;
+    color: #fff;
+
+}
+
+.style {
+    color: lime;
+    font-weight: 800;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mess {
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    background-color: white;
+    width: 400px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+    border: none;
+}
+
+.addButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: lime;
+    color: white;
+    margin: 0.25px;
+}
+
+.addButton:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .container {
-    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.btn {
-    margin-top: 30px;
-    padding: 20px;
+.item {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #fff;
+}
+
+.item_input {
+    background: none;
+    outline: none;
+    color: #fff;
     border: none;
-    border-radius: 25px;
+    width: 250px;
+    font-size: 1.4rem;
 }
 
-h1 {
-    color: black;
-    font-size: 40px;
-  
-}
-
-
-
-.sic {
-    display: none;
-}
-
-nav ul li {
-    list-style: none;
-    display: inline;
-    padding-right: 3em;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: large;
-    font-weight: bold;
-
-    
-}
-
-a:hover {
-    color: red;
-    background-color: rgb(148, 139, 139);
-}
-
-.btn:hover {
-    opacity: 0.7;
+.editButton {
+    color: lime;
+    border: none;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    background: none;
+    outline: none;
     cursor: pointer;
 }
 
-@media screen and (min-width: 800px) {
-    img {
-        width: inherit;
-      
-    }
+.removeButton {
+    color: red;
+    border: none;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    background: none;
+    outline: none;
+    cursor: pointer;
 }
+
