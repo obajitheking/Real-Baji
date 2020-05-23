@@ -7,13 +7,13 @@
 body {
     font-size: 20px;
     font-family: Libre Franklin;
+    height: 100vh;
 }
 
 .container {
     text-align: center;
     margin: 20px;
     margin-top: 50px;
-    height: 100vh;
 }
 
 h1 {
