@@ -1,62 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QUOTES</title>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.svg" alt="pinglogo">
+    <div class="container">
+        <div class="quote-text">
+            <h1 id="quote">Will you like to read Random Life Quotes?</h1>
+            <p id="author"> - By Obaji The King</p>
+        </div>
+        <button id="btn">Click Here</button>
 
-    <h1>We are launching <span>soon!</span></h1>
-    <p class="p1">Subscribe and get notified</p>
 
-    <form >
-      <input class="inputValue" type="email" pattern=".+@yahoo.com" size="30" required placeholder="Your email address">
-      <input class="btn" type="button" value="Notify Me">
-    </form>
-    <div class="output"></div>
-    <br>
-    <br>
-    <img class="im1" src="illustration-dashboard.png" alt="centerlo" width="400px">
 
-    <br>
-    <br>
-    <div class="pic">
-      <a href="#"><img src="icons8-facebook-48.png" alt="icons8-facebook-48"></a>
-      <a href="#"><img src="icons8-twitter-48.png" alt="icons8-facebook-48"></a>
-      <a href="#"><img src="icons8-instagram-48.png" alt="icons8-facebook-48"></a>
-    </div>      
-    <blockquote>&copy; Copyright Ping. All rights reserved.</blockquote>
-  </div>
- 
+    </div>
 
-    <script>
-      var button = document.querySelector('.btn');
-      var input = document.querySelector('.inputValue');
-      var output = document.querySelector('.output');
 
-      button.addEventListener('click', message);
 
-      function message(e) {
-        if(input.value === '') {
-          output.innerHTML = "<p>Whoops! It looks like you forgot to add your email</p>" ;
-        } else {
-          e.preventDefault();
-        }
-      }
 
-    </script>
+
+    <script src="main.js"></script>
 </body>
 </html>

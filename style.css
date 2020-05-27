@@ -1,92 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-size: 20px;
-    font-family: Libre Franklin;
-    height: 100vh;
+    background-color:black;
+    text-align: center;
+    
 }
 
 .container {
-    text-align: center;
-    margin: 20px;
-    margin-top: 50px;
+    padding: 100px;
+    background-color: skyblue;
+    margin: 50px 70px;
+    min-height: 50vh;
+
 }
 
 h1 {
+    font-size: 50px;
+}
+
+#author {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#btn {
     margin-top: 30px;
-    color: hsl(0, 0%, 59%);
-}
-
-.p1 {
-    margin-top: 10px;
-}
-
-span {
-    color:hsl(209, 33%, 12%);
-}
-
-input[type=email] {
-    padding: 15px 20px;
-    margin-top: 40px;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    width: 300px;
-    font-size: 18px;
-    outline: none;
-}
-
-.pic {
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
-
-a:hover {
-    color: blue;
-}
-
-.inputValue:active {
-    border: none;
-}
-
-input[type=button] {
     padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    border-radius: 30px;
+    border-radius: 20px;
     border: none;
-    background-color: hsl(223, 87%, 63%);
-    width: 300px;
+    background-color: darksalmon;
     color: white;
-    outline: none;
-}
-
-.btn:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    border: none;
-}
-
-.output {
-    color: red;
-    font-style: italic;
+    font-weight: bold;
     font-size: 15px;
-    margin-top: 2px;
 }
 
-@media (min-width:650px) {
-    
-    input[type=button] {
-        padding: 15px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        border-radius: 30px;
-        border: none;
-        background-color: hsl(223, 87%, 63%);
-        width: 100px;
-        color: white;
-    }
+#btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
