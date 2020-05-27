@@ -1,44 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-color:  rgb(163, 73, 73);
 }
 
-body {
-    background-color:black;
-    text-align: center;
-    
+img {
+    max-width: 100%;
+  
+
 }
 
 .container {
-    padding: 100px;
-    background-color: skyblue;
-    margin: 50px 70px;
-    min-height: 50vh;
+    padding: 2em;
+}
 
+.btn {
+    margin-top: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 25px;
 }
 
 h1 {
-    font-size: 50px;
+    color: black;
+    font-size: 40px;
+  
 }
 
-#author {
-    padding-top: 30px;
-    font-size: 20px;
+
+
+.sic {
+    display: none;
 }
 
-#btn {
-    margin-top: 30px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    background-color: darksalmon;
-    color: white;
+nav ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
     font-weight: bold;
-    font-size: 15px;
+
+    
 }
 
-#btn:hover {
-    cursor: pointer;
+a:hover {
+    color: red;
+    background-color: rgb(148, 139, 139);
+}
+
+.btn:hover {
     opacity: 0.7;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    img {
+        width: inherit;
+      
+    }
 }
